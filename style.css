@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+.well {
+	position: fixed;
+	width : 50%;
+	height: auto;
+	top :50%;
+	left:50%;
+	margin-left: -25%;
+	margin-top: -200px;
+	overflow: auto;
+	transition: margin-top 1s linear;
+	background-color: #fffff9;
+	line-height: 25px;
+	font-family: 'PT Serif', serif;
+}
+
+.btn-group {
+	position: absolute;
+	right: 20px;
+}
+
+.table > thead>tr > th {
+	padding-right:  60px;
+	padding-left:  60px;
+	font-variant: small-caps;
+	font-size: 20px;
+}
+
+#siteInfo,#siteWish  {
+	font-variant: small-caps;
+	font-size : 13px;
+	font-family: 'PT Serif', serif;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#siteWish {
+	font-size : 11px;
+}
+
+#info {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	padding: 4px;
+  	font-size: 20px;
+  	width: 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin : 1px;
+  	border-radius: 50%;
+  	height: 33px;
+  	color: #00ffff;
+  	opacity: 0.5;
+}
+
+@media screen and (max-width: 900px){
+	.well {
+		width : 80%;
+		margin-left: -40%;
+		margin-top: -280px;
+	}
+}

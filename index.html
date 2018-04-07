@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="script.js"></script> -->
+</head>
+<body>
+	<div class="well well-lg">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Property</th>
+					<th>Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Location</td>
+					<td id="city"></td>
+				</tr>
+				<tr>
+					<td>Weather</td>
+					<td id="weat"></td>
+				</tr>
+				<tr>
+					<td>Icon</td>
+					<td id="ico"></td>
+				</tr>
+				<tr>
+					<td>Temperature</td>
+					<td id="temp"></td>
+				</tr>
+				<tr id="clr-wind">
+					<td>Wind Speed</td>
+					<td id="windspd"></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<button class= "btn btn-default" onclick="getLocation()">Current Weather</button>
+		
+		<div class="btn-group">
+			<button type="button" class="btn btn-default" onclick="celsi()">Celsius</button>
+			<button type="button" class="btn btn-default" onclick="fahren()">Fahrenheit</button>
+		</div>
+	
+
+	</div>
+	<button class="btn btn-default" id="info" >
+			<span class="glyphicon glyphicon-info-sign"></span>
+		</button>
+</body>
+</html>
