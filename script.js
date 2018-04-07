@@ -6,7 +6,7 @@ function getLocation(){
 		navigator.geolocation.getCurrentPosition(function(position){
 			latti = position.coords.latitude;
 			longi = position.coords.longitude;
-			api = "http://api.openweathermap.org/data/2.5/weather?lat="+latti+"&lon="+longi+"&appid=5b076a73ff47357efb7ca72cf7ec0df3";			
+			api = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/1f6bc0b490002ecbd8c2042affa687c3/'+latti+','+longi;		
 			$.getJSON(api,function(data){
 			
 			weatherType = data.weather[0].description;
