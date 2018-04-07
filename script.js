@@ -1,10 +1,5 @@
 var latti,longi,api,weatherType,tempCacis,windSpeed,seaLevel,City,Country;
 
-$(document).ready(function(){
-	$('#info').popover({title: "<span id='siteInfo'>A <a href='https://www.freecodecamp.com/mgjean' target='_blank'>MGJEAN </a>Site.</span>",
-		content: "<span id='siteWish'>Good day amigos!</span>",html:true,placement:"left"});
-});
-
 function getLocation(){
 	var tempKelvin,image;
 	if (navigator.geolocation){
